@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 	(void)argc;
 
 	open_f(argv[1]);
-	exec_line();
+	exe_line();
 
 	return (0);
 }

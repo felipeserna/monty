@@ -12,7 +12,7 @@ void exe_line(void)
 
 	while (read_f() != EOF)
 	{
-		tk = strtok(line, " \t\n");
+		tk = strtok(mont.buffer, " \t\n");
 		i = 0;
 		while (tk != NULL && i < 2)
 		{
