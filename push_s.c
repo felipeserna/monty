@@ -6,7 +6,6 @@ void push_s(stack_t **stack, unsigned int line_number)
 	int num = atoi(mont.num);
 
 	new_s = malloc(sizeof(stack_t));
-
 	if (new_s == NULL)
 	{
 		fprintf(stderr, "Error: malloc failed\n");
