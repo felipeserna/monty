@@ -5,6 +5,8 @@
  * @argv: argument vector
  * Return: Always 0
  */
+own_monty_t mont = {NULL, NULL};
+
 int main(int argc, char *argv[])
 {
 	(void)argc;
