@@ -51,5 +51,8 @@ extern own_monty_t mont;
 
 void (*push)(stack_t **stack, unsigned int line_number);
 void (*pall)(stack_t **stack, unsigned int line_number);
+void open_f(char *file_name);
+int read_f();
+void close_f();
 
 #endif
