@@ -1,11 +1,11 @@
 #include "monty.h"
+own_monty_t mont = {NULL, NULL, NULL};
 /**
  * main - main function
  * @argc: argument counter
  * @argv: argument vector
  * Return: Always 0
  */
-own_monty_t mont = {NULL, NULL,NULL};
 
 int main(int argc, char *argv[])
 {

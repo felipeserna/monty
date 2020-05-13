@@ -7,7 +7,7 @@
  */
 void exe_line(void)
 {
-	
+
 	char *tk = NULL;
 	unsigned int line_number = 0;
 	stack_t *head = NULL;
@@ -23,7 +23,7 @@ void exe_line(void)
 		if (select)
 		{printf("2\n");
 			mont.num = strtok(NULL, " \t\n");
-			printf("mont numn %s\n",mont.num);
+			printf("mont numn %s\n", mont.num);
 			select(&(head), line_number);
 		}
 		free(mont.buffer);

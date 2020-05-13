@@ -1,5 +1,10 @@
 #include "monty.h"
-
+/**
+ * push_s - pushes an element to the stack
+ * @stack: stack
+ * @line_number: line number
+ * Return: void
+ */
 void push_s(stack_t **stack, unsigned int line_number)
 {
 	stack_t *new_s = NULL;
@@ -13,7 +18,7 @@ void push_s(stack_t **stack, unsigned int line_number)
 	}
 	if (num == 0)
 	{
-		fprintf(stderr, "L%d: usage: push integer\n",line_number);
+		fprintf(stderr, "L%d: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 	new_s->n = num;
@@ -29,6 +34,5 @@ void push_s(stack_t **stack, unsigned int line_number)
 		(*stack)->prev = new_s;
 	}
 	*stack = new_s;
-	printf ("ESTOY EN PUSH");
 
 }
