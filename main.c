@@ -9,7 +9,11 @@ own_monty_t mont = {NULL, NULL};
 
 int main(int argc, char *argv[])
 {
-	(void)argc;
+	if (argc != 2)
+	{
+		fprintf(stderr, "USAGE: monty file\n");
+		exit(EXIT_FAILURE);
+	}
 
 	open_f(argv[1]);
 	exe_line();
