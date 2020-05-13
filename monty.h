@@ -44,13 +44,14 @@ typedef struct instruction_s
  */
 typedef struct own_monty_s
 {
+	char *num;
 	char *buffer;
 	FILE *each_file;
 } own_monty_t;
 
 extern own_monty_t mont;
-
-void (*push)(stack_t **stack, unsigned int line_number);
+void (*get_opcode(char *s, unsigned int l))(stack_t **stack, unsigned int line_number);
+void push_s(stack_t **stack, unsigned int line_number);
 void (*pall)(stack_t **stack, unsigned int line_number);
 void open_f(char *file_name);
 int read_f(void);
