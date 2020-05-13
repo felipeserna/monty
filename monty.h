@@ -54,5 +54,6 @@ void (*pall)(stack_t **stack, unsigned int line_number);
 void open_f(char *file_name);
 int read_f(void);
 void close_f(void);
+void exe_line(void);
 
 #endif
