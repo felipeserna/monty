@@ -9,7 +9,7 @@ void open_f(char *file_name)
 	mont.each_file = fopen(file_name, "r");
 	if (mont.each_file == NULL)
 	{
-		fprintf(stderr, "Error: Can't open file %s\n", filename);
+		fprintf(stderr, "Error: Can't open file %s\n", file_name);
 		exit(EXIT_FAILURE);
 	}
 }
