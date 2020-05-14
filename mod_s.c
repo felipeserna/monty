@@ -27,7 +27,7 @@ void mod_s(stack_t **stack, unsigned int ln)
 	num1 = (*stack)->n;
 	num2 = (*stack)->next->n;
 
-	if (num2 == 0)
+	if (num1 == 0)
 	{
 		fprintf(stderr, "L%d: division by zero\n", ln);
 		exit(EXIT_FAILURE);
