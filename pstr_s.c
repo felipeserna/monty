@@ -22,12 +22,13 @@ void pstr_s(stack_t **stack, unsigned int line_number)
 	for (i = 0; tmp; i++)
 	{
 
-		if (tmp->n <= 0 || tmp->n > 127 || tmp->n == 48)
+		if (tmp->n > 0 && tmp->n < 127)
 		{
-			break;
+			printf("%c", tmp->n);
+			tmp = tmp->next;
+			continue;
 		}
-		printf("%c", tmp->n);
-		tmp = tmp->next;
+		break;
 	}
 	printf("\n");
 }
