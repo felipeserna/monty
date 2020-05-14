@@ -14,11 +14,6 @@ void pstr_s(stack_t **stack, unsigned int line_number)
 
 	tmp = *stack;
 
-	if (tmp == NULL)
-	{
-		printf("\n");
-	}
-
 	for (i = 0; tmp; i++)
 	{
 		if (tmp->n > 0 && tmp->n < 127)
