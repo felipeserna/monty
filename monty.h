@@ -54,6 +54,7 @@ void (*gt(stack_t **head, char *s, unsigned int l))(stack_t **stack, unsigned in
 void push_s(stack_t **stack, unsigned int line_number);
 void pall_s(stack_t **stack, unsigned int line_number);
 void pint_s(stack_t **stack, unsigned int line_number);
+void pop_s(stack_t **stack, unsigned int line_number);
 void open_f(char *file_name);
 int read_f(void);
 void close_f(void);

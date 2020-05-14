@@ -13,6 +13,7 @@ void (*gt(stack_t **h, char *s, unsigned int l))(stack_t **sk, unsigned int ln)
 		{"push", push_s},
 		{"pall", pall_s},
 		{"pint", pint_s},
+		{"pop", pop_s},
 		{NULL, NULL}
 	};
 
