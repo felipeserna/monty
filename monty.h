@@ -60,6 +60,7 @@ void add_s(stack_t **stack, unsigned int ln);
 void nop_s(stack_t **stack, unsigned int ln);
 void sub_s(stack_t **stack, unsigned int ln);
 void div_s(stack_t **stack, unsigned int ln);
+void mul_s(stack_t **stack, unsigned int ln);
 void open_f(char *file_name);
 int read_f(void);
 void close_f(void);
