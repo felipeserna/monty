@@ -17,7 +17,7 @@ void exe_line(void)
 	{
 		line_number += 1;
 		tk = strtok(mont.buffer, " \t\n");
-		if(tk)
+		if (tk)
 		{
 			select = gt(&(head), tk, line_number);
 			if (select)
