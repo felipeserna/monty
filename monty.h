@@ -57,5 +57,6 @@ void open_f(char *file_name);
 int read_f(void);
 void close_f(void);
 void exe_line(void);
+void free_s(stack_t *head);
 
 #endif
