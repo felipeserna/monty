@@ -20,6 +20,7 @@ void (*gt(stack_t **h, char *s, unsigned int l))(stack_t **sk, unsigned int ln)
 		{"sub", sub_s},
 		{"div", div_s},
 		{"mul", mul_s},
+		{"mod", mod_s},
 		{NULL, NULL}
 	};
 
