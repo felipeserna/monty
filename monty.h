@@ -66,6 +66,7 @@ void mul_s(stack_t **stack, unsigned int ln);
 void mod_s(stack_t **stack, unsigned int ln);
 void pchar_s(stack_t **stack, unsigned int ln);
 void pstr_s(stack_t **stack, unsigned int ln);
+void rotl_s(stack_t **stack, unsigned int ln);
 int is_number();
 void open_f(char *file_name);
 int read_f(void);
