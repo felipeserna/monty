@@ -17,7 +17,7 @@ void exe_line(void)
 	{
 		line_number += 1;
 		tk = strtok(mont.buffer, " \t\n");
-		select = get_opcode(tk, line_number);
+		select = get_opcode(&(head), tk, line_number);
 		if (select)
 		{
 			mont.num = strtok(NULL, " \t\n");
