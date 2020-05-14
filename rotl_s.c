@@ -11,15 +11,18 @@ void rotl_s(stack_t **stack, unsigned int line_number)
 	int num1 = 0;
 	(void)line_number;
 
-	tmp = *stack;
-	tmp2 = tmp->next;
-	num1 = tmp->n;
-
-	while (tmp->next)
+	if (*stack)
 	{
-		tmp->n = tmp2->n;
-		tmp = tmp2;
+		tmp = *stack;
 		tmp2 = tmp->next;
+		num1 = tmp->n;
+
+		while (tmp->next)
+		{
+			tmp->n = tmp2->n;
+			tmp = tmp2;
+			tmp2 = tmp->next;
+		}
+		tmp->n = num1;
 	}
-	tmp->n = num1;
 }
