@@ -15,7 +15,7 @@ void push_s(stack_t **stack, unsigned int line_number)
 		fprintf(stderr, "Error: malloc failed\n");
 		exit(EXIT_FAILURE);
 	}
-	if (mont.num == NULL || (atoi(mont.num)) == 0)
+	if (mont.num == NULL || is_number() == 1)
 	{
 		fprintf(stderr, "L%d: usage: push integer\n", line_number);
 		free(new_s);
