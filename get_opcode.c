@@ -23,6 +23,7 @@ void (*gt(stack_t **h, char *s, unsigned int l))(stack_t **sk, unsigned int ln)
 		{"mod", mod_s},
 		{"pchar", pchar_s},
 		{"pstr", pstr_s},
+		{"rotl", rotl_s},
 		{NULL, NULL}
 	};
 
