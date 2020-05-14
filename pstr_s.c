@@ -19,10 +19,10 @@ void pstr_s(stack_t **stack, unsigned int line_number)
 		printf("\n");
 	}
 
-	for (i = 0; tmp != NULL; i++)
+	for (i = 0; tmp; i++)
 	{
 
-		if (tmp->n <= 0 || tmp->n > 127)
+		if (tmp->n <= 0 || tmp->n > 127 || tmp->n == 48)
 		{
 			break;
 		}
