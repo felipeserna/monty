@@ -17,11 +17,14 @@ void exe_line(void)
 	{
 		line_number += 1;
 		tk = strtok(mont.buffer, " \t\n");
-		select = gt(&(head), tk, line_number);
-		if (select)
+		if(tk)
 		{
-			mont.num = strtok(NULL, " \t\n");
-			select(&(head), line_number);
+			select = gt(&(head), tk, line_number);
+			if (select)
+			{
+				mont.num = strtok(NULL, " \t\n");
+				select(&(head), line_number);
+			}
 		}
 		free(mont.buffer);
 	}
