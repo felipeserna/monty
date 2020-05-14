@@ -50,7 +50,7 @@ typedef struct own_monty_s
 } own_monty_t;
 
 extern own_monty_t mont;
-void (*get_opcode(char *s, unsigned int l))(stack_t **stack, unsigned int ln);
+void (*gt(stack_t **head, char *s, unsigned int l))(stack_t **stack, unsigned int ln);
 void push_s(stack_t **stack, unsigned int line_number);
 void pall_s(stack_t **stack, unsigned int line_number);
 void open_f(char *file_name);

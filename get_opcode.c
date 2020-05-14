@@ -1,11 +1,12 @@
 #include "monty.h"
 /**
- * get_opcode - gets the function
+ * gt- gets the function
  * @s: string
  * @l: line number for get_opcode
+ * @h: head of stack
  * Return: void
  */
-void (*get_opcode(stack_t **head, char *s, unsigned int l))(stack_t **stack, unsigned int ln)
+void (*gt(stack_t **h, char *s, unsigned int l))(stack_t **sk, unsigned int ln)
 {
 	int i = 0;
 	instruction_t op[] = {
@@ -26,7 +27,7 @@ void (*get_opcode(stack_t **head, char *s, unsigned int l))(stack_t **stack, uns
 	if (op[i].opcode == NULL)
 	{
 		fprintf(stderr, "L%d: unknown instruction %s\n", l, s);
-		free_s(*head);
+		free_s(*h);
 		close_f();
 		exit(EXIT_FAILURE);
 	}
