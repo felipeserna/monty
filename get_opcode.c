@@ -15,6 +15,7 @@ void (*gt(stack_t **h, char *s, unsigned int l))(stack_t **sk, unsigned int ln)
 		{"pint", pint_s},
 		{"pop", pop_s},
 		{"swap", swap_s},
+		{"add", add_s},
 		{NULL, NULL}
 	};
 
